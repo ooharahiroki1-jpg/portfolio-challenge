@@ -29,7 +29,11 @@ export function StartScreen() {
 
   return (
       <section className="reference-screen" aria-label="ゲーム用スタート画面">
-      <img className="reference-screen-image" src="/reference-start.png" alt="" />
+      <img
+        className="reference-screen-image"
+        src={`${import.meta.env.BASE_URL}reference-start.png`}
+        alt=""
+      />
 
       <div className="start-team-background-mask" aria-hidden="true" />
       <div className="start-team-preview" aria-live="polite">

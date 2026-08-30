@@ -30,7 +30,11 @@ export function InitialInvestmentScreen() {
 
   return (
     <section className="reference-screen" aria-label="第1回 状況把握と初期投資計画">
-      <img className="reference-screen-image" src="/reference-round1-plan.png" alt="" />
+      <img
+        className="reference-screen-image"
+        src={`${import.meta.env.BASE_URL}reference-round1-plan.png`}
+        alt=""
+      />
 
       <div className="round1-title-overlay">
         <h1>第1回：状況把握と初期投資計画</h1>

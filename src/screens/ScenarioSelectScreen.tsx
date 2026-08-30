@@ -36,7 +36,11 @@ export function ScenarioSelectScreen() {
 
   return (
     <section className="reference-screen" aria-label="シナリオ選択画面">
-      <img className="reference-screen-image" src="/reference-scenario.png" alt="" />
+      <img
+        className="reference-screen-image"
+        src={`${import.meta.env.BASE_URL}reference-scenario.png`}
+        alt=""
+      />
 
       <div className="scenario-live-cards" aria-label="シナリオ選択">
         {scenarioOptions.map((scenario) => {

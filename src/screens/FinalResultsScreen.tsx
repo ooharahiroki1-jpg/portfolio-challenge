@@ -45,7 +45,12 @@ export function FinalResultsScreen() {
   if (!winner) return null;
 
   return (
-    <section className={`final-celebration-screen team-count-${state.teams.length}`}>
+    <section
+      className={`final-celebration-screen team-count-${state.teams.length}`}
+      style={{
+        '--final-celebration-art': `url("${import.meta.env.BASE_URL}reference-scenario.png")`
+      } as CSSProperties}
+    >
       <header className="final-celebration-header">
         <div className="final-celebration-brand">
           <Trophy />

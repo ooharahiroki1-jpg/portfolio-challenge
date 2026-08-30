@@ -8127,7 +8127,7 @@ button {
   padding: 16px 20px;
   background:
     linear-gradient(110deg, rgba(255, 255, 255, 0.98), rgba(239, 247, 255, 0.96) 52%, rgba(225, 244, 255, 0.96)),
-    url('/reference-scenario.png') center / cover;
+    var(--final-celebration-art) center / cover;
 }
 
 .final-celebration-header {

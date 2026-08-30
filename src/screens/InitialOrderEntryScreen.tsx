@@ -123,7 +123,11 @@ export function InitialOrderEntryScreen({ emergency = false }: { emergency?: boo
 
   return (
     <section className={`reference-screen initial-order-reference-screen ${emergency ? 'is-emergency' : ''}`}>
-      <img className="reference-screen-image" src="/reference-initial-order.png" alt="" />
+      <img
+        className="reference-screen-image"
+        src={`${import.meta.env.BASE_URL}reference-initial-order.png`}
+        alt=""
+      />
 
       <header className="initial-order-header">
         <div>
