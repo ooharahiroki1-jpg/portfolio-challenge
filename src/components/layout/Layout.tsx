@@ -1,5 +1,6 @@
 import { useEffect, type ReactNode } from 'react';
 import { useGame } from '../../context/GameProvider';
+import { GameMemoryBoard } from './GameMemoryBoard';
 import { GameMasterControls } from './GameMasterControls';
 import { HeaderBar } from './HeaderBar';
 
@@ -87,6 +88,7 @@ export function Layout({ children }: { children: ReactNode }) {
       >
         {children}
       </main>
+      <GameMemoryBoard />
       <GameMasterControls />
     </div>
   );
